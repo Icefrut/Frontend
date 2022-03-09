@@ -13,3 +13,17 @@ img {
   width: 500px;
   border-radius: 5px
 }
+nav {
+  width: 150px;
+  border: 2px dotted blue;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+#section3 {
+  background-color: Aquamarine;
+}
+
+h2 {
+  font-family: Garamond, serif;
+
+}
