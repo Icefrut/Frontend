@@ -1,9 +1,17 @@
 body {
   background-color: LightBlue;
   margin: 10px;
+  background-image: url("../images/Sun.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
 section {
   background-color: #D3EAF2;
+  background-image: url(../images/cloudy.png),url(../images/cloudy.png),url(../images/cloudy.png),url(../images/cloudy.png);
+  background-position: top left, top right, bottom left, bottom right;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
   border-radius: 20px;
   padding: 30px;
   margin-top: 40px;
@@ -25,5 +33,11 @@ nav {
 
 h2 {
   font-family: Garamond, serif;
+  color: rgba(156, 63, 224, 0.5);
 
+}
+
+#section1 {
+  height: 400px;
+  overflow: auto;
 }
