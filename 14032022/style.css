@@ -102,3 +102,21 @@ footer {
 #footer {
   margin: 0px;
 }
+#table1 {
+  width: 700px;
+  border-collapse: collapse;
+  margin: auto;
+  table-layout: fixed;
+}
+
+#table1 th {
+  border: 2px solid black;
+}
+#table1 td {
+    border: 1px solid black;
+
+}
+#td1 {
+  transform: rotate(-90deg);
+  text-align: center;
+}
