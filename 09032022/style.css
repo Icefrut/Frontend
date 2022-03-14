@@ -41,3 +41,50 @@ h2 {
   height: 400px;
   overflow: auto;
 }
+#section5 {
+  text-align: justify;
+}
+
+#par1 {
+  text-shadow: 0px 2px 5px gray;
+  color: #277d2e;
+  font-family: arial black;
+
+}
+
+#par2 {
+  font-size: 16pt;
+  font-style: italic;
+  font-variant-caps: small-caps;
+  font-family: fantasy;
+  color: blue;
+  text-align: center;
+}
+
+.gallery1 {
+  width: 32%;
+  height: auto;
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+}
+.gallerybox {
+  width: 100%;
+  height:auto;
+
+}
+.gallery2 {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+h3 {
+  text-align: center;
+  color: rgba(237, 76, 181, 0.5);
+  text-decoration: overline underline;
+  text-decoration-style: dotted;
+  margin-top: 50px;
+
+}
