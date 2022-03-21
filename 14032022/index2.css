@@ -4,6 +4,7 @@
   grid-template-rows: 25% auto 25%;
   grid-gap: 1px;
   height: 80vh;
+  background-color: Aquamarine;
 
 }
 
@@ -18,12 +19,16 @@
   grid-row-end: 2;
 }
 .item2 {
-  text-align: center;
+  text-align: justify;
   background-color: lightyellow;
   box-shadow: rgba(255, 0, 0, 1) 0px 20px 20px;
   border-top-right-radius: 40px;
   grid-column: 1/2;
   grid-row: 2/4;
+  padding: 20px;
+  text-decoration: underline;
+  color: LightBlue;
+
 }
 .item3 {
   height: 80vh;
@@ -58,4 +63,7 @@
   border-top-right-radius: 40px;
   grid-column: 3/4;
   grid-row: 3/4;
+}
+.image {
+  width: auto;
 }
