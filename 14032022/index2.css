@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .grid-conteiner {
   display: grid;
   grid-template-columns: 35% auto 35%;
@@ -10,7 +10,7 @@
 .grid-conteiner
 {
     display: grid;
->>>>>>> ff27203352f63f5b327b72a1ab157fcba1866516
+
 
     height: 80vh;
 
@@ -35,7 +35,7 @@
     grid-row-end: 2;
     justify-content: center;
 }
-<<<<<<< HEAD
+
 .item2 {
   text-align: justify;
   background-color: lightyellow;
@@ -61,7 +61,7 @@
     grid-column: 1/2;
     grid-row: 2/4;
     justify-content: center;
->>>>>>> ff27203352f63f5b327b72a1ab157fcba1866516
+
 }
 .item3
 {
