@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .div{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      animation: anim 5s infinite;
+    }
+
+    @keyframes anim {
+      0%{top:0px;left:0px}
+      25%{top:500px;left:0px;opacity:0.5}
+      50%{top:500px;left:500px;opacity: 0}
+      75%{top:0px;left:500px;background: black}
+      100%{top:0px;left:0px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="div">
+
+  </div>
+</body>
+</html>
