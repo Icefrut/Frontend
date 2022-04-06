@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <!-- <nav class="navbar navbar-default"> -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Main</a></li>
+        <li class="active"><a href="#">Photo</a></li>
+        <li class="unactive"><a href="#">Featured</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </nav><br><br><br>
+
+  <div class="">
+    <!-- <ul class="nav nav-tabs" role="tablist"> -->
+    <ul class="nav nav-pills nav-stacked" role="tablist">
+      <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+      <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+      <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+      <li role="presentation"><a href="#gallery" role="tab" data-toggle="tab">Gallery</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane active" role="tabpanel" id="home">
+        Info about website
+      </div>
+      <div class="tab-pane" role="tabpanel" id="profile">
+        Info about you
+      </div>
+      <div class="tab-pane" role="tabpanel" id="messages">
+        Your Mail
+      </div>
+      <div class="tab-pane" role="tabpanel" id="settings">
+        Your Permitions
+      </div>
+      <div class="tab-pane" role="tabpanel" id="gallery">
+        <img class="img-thumbnail" width="300px"  src="../imageshw/collab1.png" alt="collab">
+        <img class="img-circle" width="200px"src="../imageshw/hobby3.jpg" alt="collab">
+        <img class="img-rounded" width="300px"src="../imageshw/hobby2.jpg" alt="collab">
+      </div>
+    </div>
+  </div><br><br><br>
+
+  <!-- Single -->
+  <div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Action2</a></li>
+      <li><a href="#">Action3</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Action4</a></li>
+      <li><a href="#">Action5</a></li>
+      <li><a href="#">Action6</a></li>
+    </ul>
+  </div><br><br>
+  <!-- Double Button -->
+  <div class="btn-group dropup">
+    <button type="button" class="btn btn-info">Action</button>
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Action2</a></li>
+      <li><a href="#">Action3</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Action4</a></li>
+      <li><a href="#">Action5</a></li>
+      <li><a href="#">Action6</a></li>
+    </ul>
+  </div><br><br>
+  <nav>
+    <ul class="pagination">
+      <li><a href="#"><span>&laquo</span></a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li class="disabled"><a href="#">5</a></li>
+      <li><a href="#">&raquo</a></li>
+    </ul>
+  </nav><br><br>
+
+  <div class="container">
+    <a href="#" data-toggle="tooltip" data-placement="right" title="This is a link">Youtube</a>
+
+  </div><br><br>
+
+<button type="button" class="btn btn-warning">Messages <span class="badge">5</span></button><br><br>
+<a href="#">Your Email <span class="badge">5</span></a><br><br><br><br>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready (function(){
+    $('[data-toggle= "tooltip"]').tooltip();
+  })
+</script>
+</body>
+</html>
