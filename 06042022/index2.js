@@ -1,6 +1,6 @@
-
+var random;
 window.onload = function (){
-   random();
+   randomf();
    timer();
    var input = document.getElementById("capnum");
     input.addEventListener("keypress", function(e){
@@ -10,18 +10,17 @@ window.onload = function (){
     });
 }
 
-function random() {
-  var random;
+function randomf() {
   var x = 0;
   while(true){
     random = Math.floor(Math.random()*1000000);
     x++;
     if(random>=100000){
       document.getElementById('random').innerHTML = random;
-      let obj = {
-        capchanum: random.value
-      }
-      localStorage.setItem("capcha", JSON.stringify(obj));
+      // let obj = {
+      //   capchanum: random.value
+      // }
+      // localStorage.setItem("capcha", JSON.stringify(obj));
       // console.log(random);
       break;
     }
@@ -29,7 +28,7 @@ function random() {
 
 }
 var intervalId= window.setInterval(function(){
-  random();
+  randomf();
   timer();
 },10500)
 
@@ -46,10 +45,9 @@ function timer(){
 
 function capchaCheck() {
   var input = document.getElementById("capnum");
-  console.log(input.value);
-  // if (input.value == random.value){
-  //   alert("Succesful")
-  // } else {
-  //   alert("Try Again")
-  // }
+  if (input.value == random){
+    alert("Succesful")
+  } else {
+    alert("Try Again")
+  }
 }
