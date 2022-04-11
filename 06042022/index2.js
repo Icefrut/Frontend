@@ -1,6 +1,13 @@
+
 window.onload = function (){
    random();
    timer();
+   var input = document.getElementById("capnum");
+    input.addEventListener("keypress", function(e){
+      if (e.keyCode == 13){
+        capchaCheck();
+      }
+    });
 }
 
 function random() {
@@ -11,7 +18,11 @@ function random() {
     x++;
     if(random>=100000){
       document.getElementById('random').innerHTML = random;
-      console.log(x);
+      let obj = {
+        capchanum: random.value
+      }
+      localStorage.setItem("capcha", JSON.stringify(obj));
+      // console.log(random);
       break;
     }
   }
@@ -31,4 +42,12 @@ function timer(){
     document.getElementById('timer').value = 1000 - timeleft;
     timeleft --;
   },10)
+}
+
+function capchaCheck() {
+  if (input.value == random.value){
+    alert("Succesful")
+  } else {
+    alert("Try Again")
+  }
 }
