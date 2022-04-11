@@ -17,10 +17,10 @@ function randomf() {
     x++;
     if(random>=100000){
       document.getElementById('random').innerHTML = random;
-      // let obj = {
-      //   capchanum: random.value
-      // }
-      // localStorage.setItem("capcha", JSON.stringify(obj));
+      let obj = {
+        capchanum: random
+      }
+      localStorage.setItem("capcha", JSON.stringify(obj));
       // console.log(random);
       break;
     }
