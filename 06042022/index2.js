@@ -45,9 +45,11 @@ function timer(){
 }
 
 function capchaCheck() {
-  if (input.value == random.value){
-    alert("Succesful")
-  } else {
-    alert("Try Again")
-  }
+  var input = document.getElementById("capnum");
+  console.log(input.value);
+  // if (input.value == random.value){
+  //   alert("Succesful")
+  // } else {
+  //   alert("Try Again")
+  // }
 }
