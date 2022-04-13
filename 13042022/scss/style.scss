@@ -1,0 +1,44 @@
+body{
+  background-color: red;
+}
+
+$bgcolor:lightblue;
+$divwid: 500px;
+
+.block:not(.first){
+  border-radius: 10px;
+  background-color: $bgcolor;
+  width: $divwid;
+  height:200px;
+  margin: 10px;
+}
+
+.first{
+  border-radius: 10px;
+  background-color: $bgcolor;
+  width: 600px;
+  height:200px;
+  margin: 10px;
+}
+
+// .list{
+//   padding: 10px;
+//   margin-left: 30px;
+//   list-style: none;
+//
+//   li{
+//     text-decoration: overline underline;
+//     padding: 2px;
+//   }
+// }
+
+#list{
+  padding: 10px;
+  margin-left: 30px;
+  list-style: none;
+
+  li{
+    text-decoration: overline underline;
+    padding: 2px;
+  }
+}
