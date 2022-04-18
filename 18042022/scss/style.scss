@@ -1,0 +1,75 @@
+@import "mixin.scss";
+@import "varieble";
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: red;
+
+}
+
+
+.block:not(.first){
+  @include padd(10px 30px 20px 40px);
+  border-radius: 10px;
+  background-color: $bgcolor;
+  width: $divwid;
+  height:400px;
+  margin: 10px;
+}
+
+.first{
+  border-radius: 10px;
+  background-color: $bgcolor;
+  width: 600px;
+  height:200px;
+  margin: 10px;
+}
+
+// .list{
+//   padding: 10px;
+//   margin-left: 30px;
+//   list-style: none;
+//
+//   li{
+//     text-decoration: overline underline;
+//     padding: 2px;
+//   }
+// }
+
+#list{
+  padding: 10px;
+  margin-left: 30px;
+  list-style: none;
+
+  li{
+    @include font($color:rgba(200,65,100,0.8), $FontW:bold);
+    @include brd(1px solid red);
+    text-decoration: overline underline;
+    padding: 10px;
+  }
+}
+
+#anc3{
+  @include link(black, red, white, darkgreen);
+}
+
+#grid{
+  width:100%;
+  float:left;
+  background: lightpink;
+
+  div{
+    @include grid(1, 1%);
+  }
+
+}
+
+@for $i from 1 to 5{
+  .#{$someVar}-#{$i}{
+    width: 50px + $i;
+    height: 50px + $i;
+  }
+}
