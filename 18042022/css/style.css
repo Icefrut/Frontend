@@ -7,35 +7,35 @@ body {
 }
 
 .block:not(.first) {
-  padding: 10px 30px 20px 40px;
-  border-radius: 10px;
-  background-color: lightblue;
   width: 500px;
   height: 400px;
   margin: 10px;
+  border-radius: 10px;
+  background-color: lightblue;
+  padding: 10px 30px 20px 40px;
 }
 
 .first {
-  border-radius: 10px;
-  background-color: lightblue;
   width: 600px;
   height: 200px;
   margin: 10px;
+  border-radius: 10px;
+  background-color: lightblue;
 }
 
 #list {
-  padding: 10px;
   margin-left: 30px;
+  padding: 10px;
   list-style: none;
 }
 #list li {
+  padding: 10px;
+  text-decoration: overline underline;
+  font-family: cursive;
   font-size: 2.5em;
   font-weight: bold;
-  font-family: cursive;
   color: rgba(200, 65, 100, 0.8);
   border: 1px solid red;
-  text-decoration: overline underline;
-  padding: 10px;
 }
 
 #anc3 {
@@ -52,20 +52,20 @@ body {
 }
 
 #grid {
-  width: 100%;
   float: left;
+  width: 100%;
   background: lightpink;
 }
 #grid div {
   float: left;
-  background: white;
-  margin-left: 1%;
-  margin-bottom: 1%;
+  width: 10.8571428571%;
   height: 200px;
-  width: 31.9333333333%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  background: white;
 }
-#grid div:nth-child(3n) {
-  margin-top: 1%;
+#grid div:nth-child(7n) {
+  margin-right: 0;
 }
 
 .someClass-1 {

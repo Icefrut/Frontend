@@ -1,31 +1,37 @@
-@import "mixin.scss";
-@import "varieble";
+@import 'mixin.scss';
+@import 'varieble';
 
-html{
-  scroll-behavior: smooth;
+html
+{
+    scroll-behavior: smooth;
 }
 
-body{
-  background-color: red;
-
+body
+{
+    background-color: red;
 }
 
 
-.block:not(.first){
-  @include padd(10px 30px 20px 40px);
-  border-radius: 10px;
-  background-color: $bgcolor;
-  width: $divwid;
-  height:400px;
-  margin: 10px;
+.block:not(.first)
+{
+    width: $divwid;
+    height: 400px;
+    margin: 10px;
+
+    border-radius: 10px;
+    background-color: $bgcolor;
+
+    @include padd(10px 30px 20px 40px);
 }
 
-.first{
-  border-radius: 10px;
-  background-color: $bgcolor;
-  width: 600px;
-  height:200px;
-  margin: 10px;
+.first
+{
+    width: 600px;
+    height: 200px;
+    margin: 10px;
+
+    border-radius: 10px;
+    background-color: $bgcolor;
 }
 
 // .list{
@@ -39,37 +45,48 @@ body{
 //   }
 // }
 
-#list{
-  padding: 10px;
-  margin-left: 30px;
-  list-style: none;
-
-  li{
-    @include font($color:rgba(200,65,100,0.8), $FontW:bold);
-    @include brd(1px solid red);
-    text-decoration: overline underline;
+#list
+{
+    margin-left: 30px;
     padding: 10px;
-  }
+
+    list-style: none;
+
+    li
+    {
+        padding: 10px;
+
+        text-decoration: overline underline;
+
+        @include font($color: rgba(200,65,100,.8), $FontW:bold);
+        @include brd(1px solid red);
+    }
 }
 
-#anc3{
-  @include link(black, red, white, darkgreen);
+#anc3
+{
+    @include link(black, red, white, darkgreen);
 }
 
-#grid{
-  width:100%;
-  float:left;
-  background: lightpink;
+#grid
+{
+    float: left;
 
-  div{
-    @include grid(3, 1%);
-  }
+    width: 100%;
 
+    background: lightpink;
+
+    div
+    {
+        @include grid(7, 4%);
+    }
 }
 
-@for $i from 1 to 5{
-  .#{$someVar}-#{$i}{
-    width: 50px + $i;
-    height: 50px + $i;
-  }
+@for $i from 1 to 5
+{
+    .#{$someVar}-#{$i}
+    {
+        width: 50px + $i;
+        height: 50px + $i;
+    }
 }

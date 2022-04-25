@@ -1,0 +1,68 @@
+body
+{
+    background-color: #050d2e;
+}
+
+#banner
+{
+    height: 250px;
+    padding: 0;
+}
+
+#img1
+{
+    width: 100%;
+    height: 250px;
+}
+
+#main
+{
+    height: 700px;
+}
+
+#menu
+{
+    height: 700px;
+    padding: 0;
+}
+
+#content
+{
+    height: 700px;
+}
+
+#navs
+{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 2px;
+
+    border: .5px solid white;
+    border-radius: 5px;
+}
+
+#navtext
+{
+    font-size: 1em;
+    font-weight: bold;
+
+    color: white;
+}
+
+.nav-link
+{
+    font-size: 0.8em;
+
+    color: white;
+}
+
+.nav-link:hover{
+  color: #B8C0E0;
+}
+
+.nav-pills .nav-link.active,
+.show > .nav-link
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}
