@@ -59,13 +59,13 @@ body {
 #grid div {
   float: left;
   background: white;
-  margin: 1%;
-  margin-bottom: 0;
-  height: 200px;
-  width: 98%;
-}
-#grid div:nth-child(8n) {
+  margin-left: 1%;
   margin-bottom: 1%;
+  height: 200px;
+  width: 31.9333333333%;
+}
+#grid div:nth-child(3n) {
+  margin-top: 1%;
 }
 
 .someClass-1 {

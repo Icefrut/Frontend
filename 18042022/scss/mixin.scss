@@ -30,31 +30,35 @@
 }
 
 @mixin grid($sum, $margin){
-  @if($sum == 2){
+  // @if($sum == 2){
   float: left;
   background: white;
-  margin:$margin;
-  margin-bottom: 0;
+  margin-left:$margin;
+  margin-bottom: $margin;
   // margin-bottom: $margin;
   height: 200px;
-  width:((100% - ($sum) * ($margin * 1.5)) /$sum);
+  width:((100% - ($sum) * ($margin * 1.4)) /$sum);
+
+  // &:nth-child(#{$sum}n){
+  //   margin-left: 0;
+  // }
 
   &:nth-child(#{$sum}n){
-    margin-left: 0;
+    margin-top: $margin;
   }
 
-  &:nth-child(#{$sum*4}n){
-    margin-bottom: $margin;
-  }
-}@else{
-  float: left;
-  background: white;
-  margin:$margin;
-  margin-bottom: 0;
-  height: 200px;
-  width:100% - ($margin*2);
-
-  &:nth-child(#{($sum*8)}n){
-    margin-bottom: $margin;
-}}
+  // &:nth-child(#{1}n){
+  //   margin-top: $margin;
+  // }
+// }@else{
+//   float: left;
+//   background: white;
+//   margin:$margin;
+//   margin-bottom: 0;
+//   height: 200px;
+//   width:100% - ($margin*2);
+//
+//   &:nth-child(#{($sum*8)}n){
+//     margin-bottom: $margin;
+// }}
 }
