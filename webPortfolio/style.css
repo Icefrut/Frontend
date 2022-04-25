@@ -5,14 +5,16 @@ body
 
 #banner
 {
-    height: 250px;
+    height: 300px;
     padding: 0;
 }
 
 #img1
 {
     width: 100%;
-    height: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
 
 #main
@@ -22,8 +24,10 @@ body
 
 #menu
 {
-    height: 700px;
-    padding: 0;
+    /* width: 250px; */
+    height: 300px;
+    /* padding: 0;
+    margin: auto; */
 }
 
 #content
@@ -35,7 +39,7 @@ body
 {
     width: 60%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-top: 2px;
 
     border: .5px solid white;
@@ -54,15 +58,37 @@ body
 {
     font-size: 0.8em;
 
-    color: white;
 }
 
-.nav-link:hover{
-  color: #B8C0E0;
-}
 
 .nav-pills .nav-link.active,
 .show > .nav-link
 {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.carousel{
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.imgcen {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  /* transform: scale(0.7); */
+}
+
+.imgtop{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.carousel-caption {
+  background-image: linear-gradient(to top, rgba(64, 64, 64, 0.8), rgba(64, 64, 64, 0.2));
 }
