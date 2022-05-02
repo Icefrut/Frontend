@@ -129,6 +129,7 @@ body
   bottom: 30px;
   left: 0;
   width: 100%;
+  color: #000;
 }
 
 .album:hover{
@@ -155,7 +156,13 @@ height: 100%;
 
 }
 
-.photocv p{
+/* .photocv p{
+  text-align: justify;
+  color: white;
+  font-size: 1.6em;
+  line-height: 1.5;
+} */
+.cvtext {
   text-align: justify;
   color: white;
   font-size: 1.6em;
@@ -169,9 +176,33 @@ height: 100%;
 }
 
 
-.photocv h4{
+.photocv h5{
   text-align: justify;
   color: white;
-  font-size: 1.6em;
+  font-size: 1.3em;
   line-height: 1.5;
+}
+
+.galimg{
+  width: 100%;
+  padding: 30px;
+  cursor:pointer;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  transition: 1s;
+}
+.galimg.imgsize {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: 80%;
+  transform: translate(-50%, -50%);
+}
+
+canvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
 }
